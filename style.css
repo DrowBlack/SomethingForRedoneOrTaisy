@@ -414,12 +414,32 @@ h2 {
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
+    /* Ensure image stays within borders */
+}
+
+.build-preview img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+    /* Dim image for text contrast */
+    z-index: 1;
 }
 
 .build-preview span {
     color: var(--primary-color);
     font-family: var(--hacker-font);
     animation: pulse 2s infinite;
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border: 1px solid var(--primary-color);
+    letter-spacing: 2px;
 }
 
 .download-btn {
