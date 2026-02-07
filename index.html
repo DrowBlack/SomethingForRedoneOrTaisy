@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday - Parkour Redone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Music Control & Audio -->
+    <button id="musicToggle" class="music-btn">
+        <span class="music-icon">sound_off</span>
+        <span class="music-text">PLAY OST</span>
+    </button>
+    <audio id="bgMusic" loop autoplay>
+        <!-- Uzay/Cyberpunk temalı ücretsiz bir müzik örneği -->
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="HAPPY BIRTHDAY">HAPPY BIRTHDAY</h1>
+            <h2 class="hero-desc" data-text="From DrowBlackTw">From DrowBlackTw</h2>
+            <h2 class="sub-glitch" data-text="PARKOUR REDONE">PARKOUR REDONE</h2>
+
+            <p class="hero-desc">Enter the simulation. Break the limits.</p>
+            <h2 class="hero-desc">if song not works click play button.</h2>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- NEW SECTION: Game Features (To make it longer) -->
+        <section class="features-section">
+            <h2 class="section-title reveal">What We Made?</h2>
+
+            <div class="feature-row">
+                <div class="feature-text reveal from-left">
+                    <h3>We Need More Light?</h3>
+                    <p>weneedmorelightindirwiktransitional.</p>
+                </div>
+                <div class="feature-visual reveal from-right placeholder">
+                    <div class="visual-content"><img src="image5.png" alt="IMG: MORE_LIGHT_V1"></div>
+                </div>
+            </div>
+
+            <div class="feature-row reverse">
+                <div class="feature-text reveal from-right">
+                    <h3>SKYSTRIP</h3>
+                    <p>Skystrip The Housing Sector. <br>-its looks soo fire :)</p>
+                </div>
+                <div class="feature-visual reveal from-left placeholder">
+                    <div class="visual-content"><img src="image7.png" alt="IMG: SKYSTRIP" width="700px" height="400">
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-row" style="padding-top: 80px;">
+                <div class="feature-text reveal from-left">
+                    <h3>ANNOUNCEMENTS</h3>
+                    <p>its took 2 day to make this announcement system but its really fire.</p>
+                </div>
+                <div class="feature-visual reveal from-right placeholder">
+                    <div class="visual-content"><img src="image4.png" alt="IMG: ANNOUNCEMENT_SYSTEM" width="600px"
+                            height="500"></div>
+                </div>
+            </div>
+
+            <div class="feature-row reverse" style="padding-top: 70px;">
+                <div class="feature-text reveal from-right">
+                    <h3>AETHER</h3>
+                    <p>Aether is nice district for me. <br>-its looks nice</p>
+                </div>
+                <div class="feature-visual reveal from-left placeholder">
+                    <div class="visual-content"><img src="image.png" alt="IMG: AETHER" width="700px" height="400">
+                    </div>
+                </div>
+            </div>
+
+            <div class="feature-row" style="padding-top: 70px;">
+                <div class="feature-text reveal from-right ">
+                    <h3>OutDoors Sneak</h3>
+                    <p>its looks complex</p>
+                </div>
+                <div class="feature-visual reveal from-left placeholder">
+                    <div class="visual-content"><img src="image2.png" alt="IMG: OUTDOORS_SNEAK" width="700px"
+                            height="400">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section reveal">
+            <h2 class="section-title">DEV LOGS</h2>
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide active">
+                        <div class="slide-content">
+                            <h3>Some Sneaks</h3>
+                            <p>LIGHT!</p>
+                        </div>
+                        <div class="slide-image">
+                            <!-- Kullanıcı "resim ekledim" dediği için burada senin resimlerini kullanıyorum -->
+                            <img src="image5.png" alt="Concept Art">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h3>Chilling</h3>
+                            <p>We Need Some Rest Sometimes.</p>
+                        </div>
+                        <div class="slide-image">
+                            <img src="image3.png" alt="Physics Demo">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h3>Its look Soooooo Nice</h3>
+                            <p>i love snow.</p>
+                        </div>
+                        <div class="slide-image">
+                            <img src="image6.png" alt="Level Design">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h3>GreenRoofs</h3>
+                            <p>idk what i need to write here lol</p>
+                        </div>
+                        <div class="slide-image">
+                            <img src="image8.png" alt="Level Design">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav" style="padding-bottom: 20px; padding-right: 20px;">
+                    <button id="prevBtn">&lt;</button>
+                    <button id="nextBtn">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-build reveal">
+            <div class="build-card">
+                <div class="card-header">
+                    <span class="status-dot"></span>
+                    <h3>SPECIAL BUILD v1.0</h3>
+                </div>
+                <div class="card-body">
+                    <div class="build-preview placeholder">
+                        <span>Everything is READY</span>
+                    </div>
+                    <p class="build-desc">
+                        hop on game for it?<br><br>
+                    </p>
+                    <a href="https://www.roblox.com/games/90439332784730/ParkourRedone" target="_blank"
+                        style="text-decoration: none;">
+                        <button class="download-btn">HOP ON</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CODED WITH <span class="heart">&lt;3</span> FOR THE LEGEND</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
